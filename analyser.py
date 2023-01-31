@@ -1,3 +1,17 @@
+""" 
+DIY Spectrometer Analyzer 
+
+Author: @kousheekc
+MIT License 
+Original Code: https://github.com/kousheekc/DIY-Spectrometer-Analyser
+
+Editing Author: @aelieber1
+Spring 2023 - PHSX 601 
+University of Kansas
+Edited Code: https://github.com/aelieber1/DIY_Spectrometer
+
+"""
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -38,7 +52,7 @@ def main():
             plt.plot(g_dist, color='g', label='green')
             plt.plot(b_dist, color='b', label='blue')
             plt.plot(i_dist, color='k', label='mean')
-            plt.legend(loc="upper left")
+            plt.legend(loc="upper right")
             plt.show()
 
         elif k & 0xFF == ord('r'):
