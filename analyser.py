@@ -52,6 +52,9 @@ def main():
             plt.plot(g_dist, color='g', label='green')
             plt.plot(b_dist, color='b', label='blue')
             plt.plot(i_dist, color='k', label='mean')
+            plt.xlabel("Wavelength")
+            plt.ylabel("Intensity")
+            plt.title("Extracted Spectrum")
             plt.legend(loc="upper right")
             plt.show()
 
